@@ -137,7 +137,7 @@ namespace ConsoleApp1
             // Mostrar la suma de los valores introducidos. 
 
 
-            int number, sum = 0, i=0;
+           /* int number, sum = 0;
 
 
             do
@@ -159,9 +159,94 @@ namespace ConsoleApp1
                 }
             } while (number != 0) ;
 
-            Console.WriteLine("The sum is " + sum);
+            Console.WriteLine("The sum is " + sum); */
 
-                Console.ReadLine();
+            //Escribe un programa que muestre todos los valores pares o impares
+            //entre 1 y 100 dependiendo de si el usuario introduce P o I . Si introduce otra cosa, 
+            //decir que ese valor no es correcto y pedirle otra vez.
+
+            //string answer = "";
+
+            //Console.WriteLine("Type P o I: ");
+            //answer = Console.ReadLine();
+
+            //if (answer!= "P" && answer != "I")
+            //{
+            //    Console.WriteLine("The value is incorrect. Please, type P o I:");
+            //}
+            //else if (answer == "P")
+            //{
+            //    for (int i = 2; i < 100; i = i+2 )
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+                    
+            //}
+            //else
+            //{
+            //    for (int y = 1; y < 100; y = y + 2)
+            //    {
+            //        Console.WriteLine(y);
+            //    }
+            //}
+
+            //// Escribe un programa que pregunte al usuario su edad. Mostrar en pantalla “Feliz cumpleaños” repetido tantas veces como años tenga.
+
+            //int edad;
+
+            //Console.WriteLine("How old are you? Type a number.");
+            //edad = Convert.ToInt32(Console.ReadLine());
+
+            //for (int e=1; e <= edad; e++)
+            //{
+            //    Console.WriteLine("Feliz cumpleaños!");
+            //}
+
+
+
+            // Pedir al usuario un número. Mostrar en pantalla 
+            //         *
+            //         **
+            //         ***
+            //     Con tantas líneas como el número que ha introducido
+
+
+            //int numero;
+
+            //Console.WriteLine("Type a number:");
+            //numero = Convert.ToInt32(Console.ReadLine());
+
+            //for (int i = 0; i <= numero; i++)
+            //{
+            //    for (int j = 1; j <= i+1; j ++)
+            //    {
+            //        // to be able to place the asterics on one line -> Console.Write();
+            //        Console.Write("*");
+            //    }
+            //    Console.WriteLine("\n");
+            //}
+
+            //Escribe un programa que muestre los números de 1 a 12 en una columna. 
+            //En la columna de al lado de los números impares mostrar el cuadrado de ese valor y en la de los pares mostrar el cubo.
+
+            for(int k = 1; k <= 12; k++)
+            {
+                if (k % 2 == 0)
+                {
+                    Console.WriteLine("\t" + k + " en el cubo  es " + Math.Pow(k, 3) + "\t");
+                }
+                else
+                {
+                    Console.Write("\t" + k + " en el cuadrado  es " + Math.Pow(k, 2));
+                }
+                
+
+            }
+            
+
+
+
+            Console.ReadLine();
         }
     }
 }
