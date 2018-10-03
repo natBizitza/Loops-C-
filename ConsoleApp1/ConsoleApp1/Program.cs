@@ -229,20 +229,27 @@ namespace ConsoleApp1
             //Escribe un programa que muestre los números de 1 a 12 en una columna. 
             //En la columna de al lado de los números impares mostrar el cuadrado de ese valor y en la de los pares mostrar el cubo.
 
-            for(int k = 1; k <= 12; k++)
-            {
-                if (k % 2 == 0)
-                {
-                    Console.WriteLine("\t" + k + " en el cubo  es " + Math.Pow(k, 3) + "\t");
-                }
-                else
-                {
-                    Console.Write("\t" + k + " en el cuadrado  es " + Math.Pow(k, 2));
-                }
-                
+            //for(int k = 1; k <= 12; k++)
+            //{
+            //    if (k % 2 == 0)
+            //    {
+            //        Console.WriteLine("\t" + k + " en el cubo  es " + Math.Pow(k, 3) + "\t");
+            //    }
+            //    else
+            //    {
+            //        Console.Write("\t" + k + " en el cuadrado  es " + Math.Pow(k, 2));
+            //    }
+            //}
 
+            //Mostrar en pantalla diez números, siendo el primero 1 y los siguientes la suma del número anterior y 5
+            int total = 1;
+
+            for (int z = 1; z < 11; z++ )
+            {
+                total = (total + 4);
+                Console.WriteLine(total);
             }
-            
+
 
 
 
