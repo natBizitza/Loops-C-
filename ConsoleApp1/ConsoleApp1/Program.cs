@@ -137,29 +137,29 @@ namespace ConsoleApp1
             // Mostrar la suma de los valores introducidos. 
 
 
-           /* int number, sum = 0;
+            /* int number, sum = 0;
 
 
-            do
-            {
-                Console.WriteLine("Type a number");
-                number = Convert.ToInt32(Console.ReadLine());
-                if (number == 0)
-                {
-                    Console.WriteLine("You typed zero");
-                }
-                else if (number > 0)
-                {
-                    sum = sum + number;
-                    Console.WriteLine("The sum of the numbers is " + sum);
-                }
-                else
-                {
-                    Console.WriteLine("The program ignores negative numbers.");
-                }
-            } while (number != 0) ;
+             do
+             {
+                 Console.WriteLine("Type a number");
+                 number = Convert.ToInt32(Console.ReadLine());
+                 if (number == 0)
+                 {
+                     Console.WriteLine("You typed zero");
+                 }
+                 else if (number > 0)
+                 {
+                     sum = sum + number;
+                     Console.WriteLine("The sum of the numbers is " + sum);
+                 }
+                 else
+                 {
+                     Console.WriteLine("The program ignores negative numbers.");
+                 }
+             } while (number != 0) ;
 
-            Console.WriteLine("The sum is " + sum); */
+             Console.WriteLine("The sum is " + sum); */
 
             //Escribe un programa que muestre todos los valores pares o impares
             //entre 1 y 100 dependiendo de si el usuario introduce P o I . Si introduce otra cosa, 
@@ -180,7 +180,7 @@ namespace ConsoleApp1
             //    {
             //        Console.WriteLine(i);
             //    }
-                    
+
             //}
             //else
             //{
@@ -242,16 +242,53 @@ namespace ConsoleApp1
             //}
 
             //Mostrar en pantalla diez números, siendo el primero 1 y los siguientes la suma del número anterior y 5
-            int total = 1;
+            /*           int total = 1;
 
-            for (int z = 1; z < 11; z++ )
+                       for (int z = 1; z < 11; z++ )
+                       {
+                           total = (total + 4);
+                           Console.WriteLine(total);
+                       }
+
+                     //Crear un programa que muestre el valor de sumar todos los números desde 1 hasta el número que introduzca el usuario. 
+                       //Por ejemplo si introduce el 8 debería mostrar 36 (1 + 2+ 3+ 4+ 5+ 6+ 7+ 8)
+
+                       int number, sum = 0;
+
+                       Console.WriteLine("Type a number...");
+                       number = Convert.ToInt32(Console.ReadLine());
+
+                       for(int i = 1; i <= number; i++)
+                       {
+                          sum = sum + number;
+
+                       }
+                       32
+                       Console.WriteLine("The sum of the numbers from one to " + number + " is " + sum + " !");
+            */
+            //Escribe un programa que muestre el resultado de sumar todos los números del 1 hasta el número introducido 
+            //y que vuelva a pedirle al usuario otro número hasta que el usuario introduzca un 0
+
+
+            int number, sum = 0;
+
+            do
             {
-                total = (total + 4);
-                Console.WriteLine(total);
-            }
+                Console.WriteLine("Type a number...");
+                number = Convert.ToInt32(Console.ReadLine());
+
+                for (int i = 1; i <= number; i++)
+                {
+                    sum = sum + number;
+
+                }
 
 
+            } while (number != 0);
 
+            Console.WriteLine(sum);
+
+            Console.WriteLine("Awesome. You are done.");
 
             Console.ReadLine();
         }
